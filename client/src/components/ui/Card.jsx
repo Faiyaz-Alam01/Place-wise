@@ -1,16 +1,18 @@
 import React from "react";
 
-const Card = ({ title, bgColour, img }) => {
+const Card = ({ title, icon, desc }) => {
   return (
-    <section
-      className={`p-5 ${bgColour} rounded-xl flex flex-col items-center justify-center text-center`}
-    >
-      {img}
+     <div className="bg-white p-6 rounded-xl border border-slate-200">
+        <div className="text-blue-600 text-3xl">{icon}</div>
 
-      <p className="text-slate-900 mt-3 font-medium">
-        {title}
-      </p>
-    </section>
+        <h3 className="mt-4 text-lg font-semibold text-slate-900">
+          {title}
+        </h3>
+
+        <p className="mt-2 text-sm text-slate-500">
+          {desc}
+        </p>
+      </div>
   );
 };
 

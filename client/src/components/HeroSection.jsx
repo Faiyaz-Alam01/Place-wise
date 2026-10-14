@@ -5,7 +5,7 @@ import { FaStar } from "react-icons/fa";
 const HeroSection = () => {
   return (
     <section className="w-full">
-      <div className="mx-auto flex min-h-[600px] max-w-7xl flex-col items-center gap-12 px-6 py-16 lg:flex-row lg:gap-16 lg:px-8 lg:py-20">
+      <div className="mx-auto flex min-h-150 max-w-7xl flex-col items-center gap-12 px-6 py-16 lg:flex-row lg:gap-16 lg:px-8 lg:py-20">
 
         {/* LEFT */}
         <div className="w-full lg:w-1/2">
