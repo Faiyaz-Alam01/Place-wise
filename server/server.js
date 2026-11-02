@@ -9,6 +9,14 @@ dotenv.config({
 	path: './.env'
 })
 
+// middlewares
+app.use(express.json())
+app.use(express.urlencoded({ extended: true }))
+
+// route
+import userRoutes from "./routes/user.route.js"
+app.use("/api/v1/users", userRoutes);
+
 connectDB()
 
 .then(() => {
